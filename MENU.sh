@@ -69,10 +69,7 @@ case $opcion in
 mkdir .termux;
 cd .termux;
 touch termux.properties;
-echo "extra-keys = [ \
- ['ESC','|','/','HOME','UP','END','PGUP','DEL'], \
- ['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN','BKSP'] \
-]" >> termux.properties;
+echo "extra-keys=[['ESC','|','/','HOME','UP','END','PGUP','DEL'],['TAB','CTRL','ALT','LEFT','DOWN','RIGHT','PGDN','BKSP']]" >> termux.properties;
 echo -e "        \e[0m\e[1mFAVOR DE CERRAR LA TERMINAL";;
 2) echo -e "\e[1m\e[36mEl proceso puede tardar \e[1m\e[31m$nombre";
 sleep 3.0
